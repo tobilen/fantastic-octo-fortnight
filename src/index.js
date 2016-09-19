@@ -1,1 +1,7 @@
-console.log(`Hello World!`);
+// @flow
+
+function hello(name: string) {
+  console.log(`Hello ${name}!`);
+}
+
+hello('World');
