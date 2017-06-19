@@ -9,10 +9,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2016', 'flow']
-        }
+        loader: 'babel-loader'
       }
     ]
   }
