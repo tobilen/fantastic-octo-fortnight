@@ -1,19 +1,19 @@
 module.exports = {
-    entry: "./src/index.js",
-    output: {
-        path: __dirname + "/build",
-        filename: "bundle.js"
-    },
-    module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
-          loader: 'babel', // 'babel-loader' is also a valid name to reference
-          query: {
-            presets: ['es2015']
-          }
+  entry: "./src/index.js",
+  output: {
+    path: __dirname + "/build",
+    filename: "bundle.js"
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2016', 'flow']
         }
-      ]
-    }
+      }
+    ]
+  }
 };
