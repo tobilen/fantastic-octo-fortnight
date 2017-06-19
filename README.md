@@ -1,7 +1,10 @@
 # node-js-boilerplate
 
-A simple node starter project with Jest, Flow, Babel, and Webpack.
+A super-simple Node starter project with Jest, Flow, Babel, and Webpack.
 
-* `npm start` Start watching src/index.js and compile to build/bundle.js.
-* `npm test` Run Jest tests.
+That's it!
+
+* `npm run start` Compile src/index.js to build/bundle.js and run it.
+* `npm run watch` Start watching src/index.js and compile it on change.
+* `npm run test` Run Jest tests.
 * `npm run flow` Run Flow checks.
