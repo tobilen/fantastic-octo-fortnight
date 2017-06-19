@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack --watch",
+    "start": "webpack && node ./build/bundle",
+    "watch": "webpack --watch",
     "test": "jest",
     "flow": "flow"
   },
